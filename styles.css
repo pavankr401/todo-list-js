@@ -1,0 +1,105 @@
+:root{
+  --nav-color: rgb(108, 0, 240);
+  --nav-hover-color: rgb(185, 127, 255);
+  --bg-color: blueviolet;
+  --btn-color: rgb(59, 0, 130);
+  --btn-hover-color: rgb(82, 0, 182);
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#navbar{
+  display:flex;
+  justify-content: right;
+  align-items: center;
+  height: 50px;
+  background-color: var(--nav-color);
+}
+
+#navbar div{
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#navbar div:hover{
+  background-color: var(--nav-hover-color);
+  cursor: pointer;
+}
+
+#outline{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 93.5vh;
+  width: 100vw;
+  background-color: var(--bg-color);
+}
+
+#container1{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  width: 40vw;
+  height: inherit;
+}
+
+#myText{
+  height: 30px;
+  width: 240px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+#myText:focus{
+  outline: 0;
+}
+
+#addButton{
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  background-color: var(--btn-color);
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#addButton:hover{
+  background-color: var(--btn-hover-color);
+}
+
+#container2{
+  width: 60vw;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#heading{
+  color: white;
+  background-color: var(--nav-color);
+  width: 300px;
+  height: 30px;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px;
+}
+
+#list-items{
+  background-color: white;
+  width: 320px;
+  height: auto;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
