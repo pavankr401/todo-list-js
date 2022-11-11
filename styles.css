@@ -102,4 +102,25 @@
   font-size: 20px;
   display: flex;
   flex-direction: column;
+  user-select: none;
+}
+
+
+#list-items li{
+  list-style: none;
+  font-size: 20px;
+  margin: 5px;
+  display: flex;
+}
+
+li button:first-child{
+  margin-left: auto;
+}
+li button{
+  margin-right: 5px;
+}
+
+.fa{
+  margin : 4px;
+  display: inline;
 }
