@@ -2,6 +2,11 @@ const textBox = document.getElementById("myText");
 const addBtn = document.getElementById("addButton");
 const listItems = document.getElementById('list-items').children;
 const list_UL = document.getElementById('list-items');
+const root = document.querySelector(":root");
+const redBtn = document.querySelector("#red");
+const greenBtn = document.querySelector("#green");
+const defaultBtn = document.querySelector("#default");
+
 
 
 // add up, down, remove button 
@@ -74,3 +79,27 @@ addBtn.addEventListener('click', function handleClick(){
   textBox.value = "";
 })
 
+
+redBtn.addEventListener("click", function handleClick(){
+  root.style.setProperty("--nav-color", "rgb(165, 0, 0)");
+  root.style.setProperty("--nav-hover-color", "rgb(244, 0, 0)");
+  root.style.setProperty("--bg-color", "rgb(224, 0, 0)");
+  root.style.setProperty("--btn-color", "rgb(122, 0, 0)");
+  root.style.setProperty("--btn-hover-color", "rgb(135, 47, 47)");
+})
+
+greenBtn.addEventListener("click", function handleClick(){
+  root.style.setProperty("--nav-color", "rgb(0, 157, 0)");
+  root.style.setProperty("--nav-hover-color", "rgb(111, 223, 111)");
+  root.style.setProperty("--bg-color", "rgb(0, 230, 0)");
+  root.style.setProperty("--btn-color", "rgb(0, 105, 0)");
+  root.style.setProperty("--btn-hover-color", "rgb(62, 117, 62)");
+})
+
+defaultBtn.addEventListener("click", function handleClick(){
+  root.style.setProperty("--nav-color", "rgb(108, 0, 240)");
+  root.style.setProperty("--nav-hover-color", "rgb(185, 127, 255)");
+  root.style.setProperty("--bg-color", "blueviolet");
+  root.style.setProperty("--btn-color", "rgb(59, 0, 130)");
+  root.style.setProperty("--btn-hover-color", "rgb(82, 0, 182)");
+})

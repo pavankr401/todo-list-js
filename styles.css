@@ -11,23 +11,41 @@
 }
 
 #navbar{
-  display:flex;
-  justify-content: right;
-  align-items: center;
-  height: 50px;
   background-color: var(--nav-color);
+  overflow: hidden;
 }
-
-#navbar div{
-  color: white;
+#navbar div, #navbar button{
   font-size: 20px;
-  padding: 10px;
+  color: white;
+  padding: 6px 16px;
 }
+#subnav{
+  float: left;
+  overflow: hidden;
+  z-index: 1;
+}
+#subnav-content{
+  display: none;
+  position: absolute;
+  left: 0;
 
-#navbar div:hover{
+}
+#myTheme:hover, #subnav-content button:hover{
   background-color: var(--nav-hover-color);
   cursor: pointer;
 }
+#subnav:hover #subnav-content{
+  display: flex;
+  flex-direction: column;
+}
+
+#subnav-content button{
+  background-color: var(--btn-color);
+  cursor: pointer;
+  border: 0;
+}
+
+
 
 #outline{
   display: flex;
@@ -123,4 +141,5 @@ li button{
 .fa{
   margin : 4px;
   display: inline;
+  color: var(--nav-color)
 }

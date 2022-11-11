@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>createList</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <div id="navbar">
-      <div>Theme</div>
-    </div>
-    <div id="outline">
-      <div id="container1">
-        <input type="text" id="myText" value="" placeholder="Enter item that you to do">
-        <button id="addButton">Add</button>
-      </div>
-  
-      <div id="container2">
-        <div id="heading">List</div>
-        <ul id="list-items">
-          <li>meditate</li>
-          <li>code</li>
-          <li>eat</li>
-          <li>sleep</li>
-        </ul>
+
+<head>
+  <title>createList</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div id="navbar">
+    <div id="subnav">
+      <div id="myTheme">Theme</div>
+      <div id="subnav-content">
+        <button id="red">red</button>
+        <button id="green">green</button>
+        <button id="default">default</button>
       </div>
     </div>
+  </div>
+  <div id="outline">
+    <div id="container1">
+      <input type="text" id="myText" value="" placeholder="Enter item that you to do">
+      <button id="addButton">Add</button>
+    </div>
+
+    <div id="container2">
+      <div id="heading">List</div>
+      <ul id="list-items">
+        <li>meditate</li>
+        <li>code</li>
+        <li>eat</li>
+        <li>sleep</li>
+      </ul>
+    </div>
+  </div>
 
 
-    <script src="app.js"></script>
-  </body>
+  <script src="app.js"></script>
+</body>
+
 </html>
